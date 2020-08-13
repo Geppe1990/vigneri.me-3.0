@@ -1,7 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql } from "gatsby";
 import Layout from "../components/layout"
 import SEO from "../components/SEO"
+import Intro from "../components/index/intro";
 
 export default ({ data }) => {
 	return (
@@ -12,8 +13,12 @@ export default ({ data }) => {
 				pathname={data.site.siteMetadata.url}
 			/>
 			<div>
-				<h1 className="text-center mb-16">{data.site.siteMetadata.title}</h1>
+				<Intro />
+				<h1 className="heading">{data.site.siteMetadata.title}</h1>
 				<p>Questa è la homepage</p>
+				<em>Pippo Franco</em>
+				<h2 className="heading">About me</h2>
+				<h2 className="heading--reverse">About me</h2>
 			</div>
 		</Layout>
 	)

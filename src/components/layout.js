@@ -1,18 +1,21 @@
-import React from "react"
-import Header from "./header"
-import Footer from "./footer"
-import "../css/global.css"
+import React from "react";
+import Header from "./header";
+import Footer from "./footer";
+import GlobalStyles from './styles/globalStyles';
 
 export default ({ children }) => {
 	return (
-		<div className="siteWrapper">
-			<Header />
-			<main>
-				<div className="container mx-auto flex flex-wrap py-6 max-w-screen-lg">
-					{children}
+		<React.Fragment>
+			<GlobalStyles />
+				<div className="siteWrapper">
+					<Header />
+					<main>
+						<div>
+							{children}
+						</div>
+					</main>
+					<Footer />
 				</div>
-			</main>
-			<Footer />
-		</div>
+		</React.Fragment>
 	)
 }
