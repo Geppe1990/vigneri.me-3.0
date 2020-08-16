@@ -1,12 +1,38 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import styled from 'styled-components';
+import colors from "./styles/globalStyles";
 
+const FOOTER = styled.footer`
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid ${colors.black};
+    padding: 12px;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    small {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+`;
 
 export default () => {
     return (
-        <footer>
+        <FOOTER>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/giuseppevigneri/">
@@ -33,9 +59,9 @@ export default () => {
                     </a>
                 </li>
             </ul>
-            <div>
-                Made with <FontAwesomeIcon icon={faHeart} />&nbsp;and <a href="https://www.gatsbyjs.org/">GatsbyJS</a> by Giuseppe Vigneri
-            </div>
-        </footer>
+            <small>
+                {new Date().getFullYear()} Vigneri Giuseppe Via Prove 16 44021 Codigoro (FE) Italy Tel: +39 346 2364389
+            </small>
+        </FOOTER>
 	)
 }

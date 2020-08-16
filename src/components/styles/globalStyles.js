@@ -25,10 +25,31 @@ const GlobalStyles = createGlobalStyle`
 		color: ${colors.black};
 		background-color: ${colors.white};
 		font-size: 18px;
+		font-family: Source Code Pro;
+		line-height: 1.5;
+		margin: 0;
+		padding: 0;
 	}
 
 	p {
 		margin-bottom: 24px;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	li {
+		list-style: none;
+	}
+
+	.text-center {
+		text-align: center;
 	}
 
 	.container {
@@ -36,6 +57,14 @@ const GlobalStyles = createGlobalStyle`
     	width: 90%;
     	max-width: 1024px;
 	    margin: 0 auto;
+
+		&-fluid {
+			width: 100%;
+			height: auto;
+			position: relative;
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	.section:first-child {
@@ -68,22 +97,30 @@ const GlobalStyles = createGlobalStyle`
 		animation: 1s ${blink} step-end infinite;
 	}
 
+	h1, h2, h3, h4, h5, h6 {
+		font-family: Source Sans Pro;
+	}
+
 	h1 {
-		font-size: 4rem;
+		font-size: 64px;
 	}
 
 	h2{
-		font-size: 1.5rem;
+		font-size: 64px;
+	}
+
+	h3 {
+		font-size: 42px;
 	}
 	
-	h2.heading {
+	.heading {
 		font-weight: 100;
 		text-shadow: ${heading.normal};
 		color: #ffffff;
-	}
 
-	h2.heading--reverse {
-		text-shadow: ${heading.reverse};
+		&--reverse {
+			text-shadow: ${heading.reverse};
+		}
 	}
 `
 

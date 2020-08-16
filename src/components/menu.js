@@ -1,6 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
+import styled from 'styled-components';
+
+const NAV = styled.nav`
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+`;
+
+const LINK = styled(Link)`
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 15px;
+`;
 
 export default () => {
 	const data= useStaticQuery(
@@ -16,24 +29,24 @@ export default () => {
 	)
 
 	return (
-		<nav>
+		<NAV>
 			<div>
 				<span>
-					<Link to={`/`}>{`< ${data.site.siteMetadata.title} />`}</Link>
+					<LINK to={`/`}>{`< ${data.site.siteMetadata.title} />`}</LINK>
 				</span>
 			</div>
 
 			<div>
-				<Link to={`/blog/`}>
+				<LINK to={`/blog/`}>
 					Blog
-				</Link>
-				<Link to={`/about/`}>
+				</LINK>
+				<LINK to={`/about/`}>
 					About
-				</Link>
-				<Link to={`/test/`}>
+				</LINK>
+				<LINK to={`/test/`}>
 					Test
-				</Link>
+				</LINK>
 			</div>
-		</nav>
+		</NAV>
 	)
 }

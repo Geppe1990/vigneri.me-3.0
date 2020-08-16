@@ -45,12 +45,6 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-plugin-typography`,
-			options: {
-				pathToConfigModule: `src/utils/typography`,
-			},
-		},
-		{
 			resolve: "gatsby-plugin-page-progress",
 			options: {
 				includePaths: ["/", { regex: "^/blog/*" }],
