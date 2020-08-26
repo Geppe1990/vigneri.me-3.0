@@ -30,13 +30,13 @@ export default () => {
 
 	return (
 		<NAV>
-			<React.Fragment>
+			<div>
 				<span>
 					<LINK to={`/`} className="heading--reverse">{`< ${data.site.siteMetadata.title} />`}</LINK>
 				</span>
-			</React.Fragment>
+			</div>
 
-			<React.Fragment>
+			<div>
 				<LINK to={`/blog/`} className="heading--reverse">
 					Blog
 				</LINK>
@@ -46,7 +46,7 @@ export default () => {
 				<LINK to={`/test/`} className="heading--reverse">
 					Test
 				</LINK>
-			</React.Fragment>
+			</div>
 		</NAV>
 	)
 }

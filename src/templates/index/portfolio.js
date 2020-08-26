@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import redvalentino from '../../assets/images/redvalentino.png';
-import valentino from '../../assets/images/valentino.png';
+import redvalentino from '../../assets/images/redvalentino.jpg';
+import valentino from '../../assets/images/valentino.jpg';
 import accenti from '../../assets/images/accenti.png';
 
 
@@ -15,12 +15,12 @@ const PORTFOLIOS = styled.div`
 
 		&.redvalentino {
 			background-image: url(${redvalentino});
-			background-position-y: 50%;
+			background-position-y: 25%;
 		}
 
 		&.valentino {
 			background-image: url(${valentino});
-			background-position-y: 20%;
+			background-position-y: 45%;
 		}
 
 		&.accenti {
@@ -66,14 +66,14 @@ export default () => {
 				<PORTFOLIOS>
 					<div className="portfolio redvalentino">
 						<div className="website">
-							<a href="https://www.redvalentino.com" className="heading--reverse">redvalentino.com</a>
+							<a href="https://www.redvalentino.com" rel="nofollow" className="heading--reverse">redvalentino.com</a>
 						</div>
 						<a className="portfolio--link heading--reverse" href="https://www.redvalentino.com">red<br />valentino</a>
 					</div>
 
 					<div className="portfolio valentino">
 						<div className="website">
-							<a href="https://www.valentino.com" className="heading--reverse">valentino.com</a>
+							<a href="https://www.valentino.com" rel="nofollow" className="heading--reverse">valentino.com</a>
 						</div>
 						<a className="portfolio--link heading--reverse" href="https://www.valentino.com">valentino</a>
 					</div>
