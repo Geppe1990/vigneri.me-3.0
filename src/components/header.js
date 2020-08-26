@@ -1,11 +1,17 @@
 import React from "react"
+import styled from "styled-components";
 import Menu from "./menu"
 
-export default () => {
+const HEADER = styled.header`
+    position: fixed;
+    width: 100%;
+    top: 0%;
+`;
 
+export default () => {
     return (
-        <header>
+        <HEADER>
             <Menu />
-        </header>
+        </HEADER>
 	)
 }

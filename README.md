@@ -1,3 +1,8 @@
 TODO:
-    - Inserire i componenti usati in index in una sottocartella di /templates
-    - Gestire l'opacity delle immagini in portfolio con una funzione, guardare come wes bos gestisce le funzioni esterne
+    - Privacy Page
+    - GDPR (?)
+    - Google Analytics
+
+BEFORE ONLINE:
+    - Fare un check dei metadata in gatsby-config.js
+    - Fare i check interni alle pagine con un tool di analisi lato browser

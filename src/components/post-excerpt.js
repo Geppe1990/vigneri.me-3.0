@@ -1,28 +1,33 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+
+const EXCERPT = styled.div`
+	h3 {
+		margin: 0;
+	}
+
+	.tags {
+		font-size: 14px;
+	}
+`;
 
 export default ({ id, img, title, excerpt, slug, category, date}) => {
-
 	return (
-		<div>
-			<div style={{backgroundImage: `url(${img})`}}></div>
+		<EXCERPT className="card">
 			<div>
-				<div>
-					{category.map((cat, i) =>
-						<p key={i}>
-							{cat}
-						</p>
-					)}
+				<div>{date}</div>
+				<h3>
 					<Link to={slug}>{title}</Link>
+				</h3>
 				<p>{excerpt}</p>
-				</div>
-				<div>
-				 <div>
-					 <p>Pubblicato il</p>
-					 <p>{date}</p>
-				 </div>
-				</div>
+
+				{category.map((cat, i) =>
+					<span className="tags" key={i}>
+						{cat}
+					</span>
+				)}
 			</div>
-		</div>
+		</EXCERPT>
 	)
 }

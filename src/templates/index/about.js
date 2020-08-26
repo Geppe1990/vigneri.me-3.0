@@ -30,11 +30,15 @@ export default () => {
                     <h3>Skills</h3>
                     <ABOUT>
                             <li>Javascript</li>
-                            <li>React</li>
-                            <li>GIT</li>
-                            <li>node.js</li>
-                            <li>Python</li>
+                            <li>ReactJS</li>
+                            <li>nodeJS</li>
+                            <li>PHP</li>
+                            <li>SASS</li>
                             <li>Bootstrap</li>
+                            <li>Webpack</li>
+                            <li>Gulp/Grunt</li>
+                            <li>Bootstrap</li>
+                            <li>GIT</li>
                     </ABOUT>
                 </div>
                 

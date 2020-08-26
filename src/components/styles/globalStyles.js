@@ -2,12 +2,12 @@ import { keyframes, createGlobalStyle } from 'styled-components';
 
 const colors = {
 	"black": "#222",
-	"white": "#ffffff",
+	"white": "#f9fafb",
 }
 
-const heading = {
-	"normal": `1px 0 0 ${colors.black}, -1px 0 0 ${colors.black}, 0 1px 0 ${colors.black}, 0 -1px 0 ${colors.black}, 1px 1px ${colors.black}, -1px -1px 0 ${colors.black}, 1px -1px 0 ${colors.black}, -1px 1px 0 ${colors.black}`,
-	"reverse": `1px 0 0 ${colors.white}, -1px 0 0 ${colors.white}, 0 1px 0 ${colors.white}, 0 -1px 0 ${colors.white}, 1px 1px ${colors.white}, -1px -1px 0 ${colors.white}, 1px -1px 0 ${colors.white}, -1px 1px 0 ${colors.white}`,
+const shadow = {
+	"heading": `1px 0 0 ${colors.black}, -1px 0 0 ${colors.black}, 0 1px 0 ${colors.black}, 0 -1px 0 ${colors.black}, 1px 1px ${colors.black}, -1px -1px 0 ${colors.black}, 1px -1px 0 ${colors.black}, -1px 1px 0 ${colors.black}`,
+	"heading_reverse": `1px 0 0 ${colors.white}, -1px 0 0 ${colors.white}, 0 1px 0 ${colors.white}, 0 -1px 0 ${colors.white}, 1px 1px ${colors.white}, -1px -1px 0 ${colors.white}, 1px -1px 0 ${colors.white}, -1px 1px 0 ${colors.white}`,
 }
 
 const blink = keyframes`
@@ -84,10 +84,32 @@ const GlobalStyles = createGlobalStyle`
 		font-family: Source Sans Pro;
 	}
 
-	em {
+	em,
+	.tags {
 		font-style: inherit;
     	background: ${colors.black};
     	color: ${colors.white};
+	}
+
+	.tags {
+		margin-right: 10px;
+		padding: 2px;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.card {
+		padding: 20px;
+		margin-bottom: 20px;
+		background: #ffffff;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	.typing::after {
@@ -115,11 +137,11 @@ const GlobalStyles = createGlobalStyle`
 	
 	.heading {
 		font-weight: 100;
-		text-shadow: ${heading.normal};
+		text-shadow: ${shadow.heading};
 		color: #ffffff;
 
 		&--reverse {
-			text-shadow: ${heading.reverse};
+			text-shadow: ${shadow.heading_reverse};
 		}
 	}
 `

@@ -8,7 +8,7 @@ module.exports = {
 	/* Your site config here */
 	siteMetadata: {
 		title: "vigneri.me",
-		titleTemplate: "%s · The Real Hero",
+		titleTemplate: "Vigneri Giuseppe - Front-end Web Developer",
 		description: "Questa è la descrizione del sito",
 		url: "http://localhost:8000",
 		siteUrl: "http://localhost:8000",
@@ -25,6 +25,13 @@ module.exports = {
 				maxWidth: 1920,
 				linkImagesToOriginal: false,
 				withWebp: true,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+			  name: `images`,
+			  path: `${__dirname}/src/assets/images`,
 			},
 		},
 		{

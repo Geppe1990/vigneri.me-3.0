@@ -32,18 +32,18 @@ export default () => {
 		<NAV>
 			<div>
 				<span>
-					<LINK to={`/`}>{`< ${data.site.siteMetadata.title} />`}</LINK>
+					<LINK to={`/`} className="heading--reverse">{`< ${data.site.siteMetadata.title} />`}</LINK>
 				</span>
 			</div>
 
 			<div>
-				<LINK to={`/blog/`}>
+				<LINK to={`/blog/`} className="heading--reverse">
 					Blog
 				</LINK>
-				<LINK to={`/about/`}>
+				<LINK to={`/about/`} className="heading--reverse">
 					About
 				</LINK>
-				<LINK to={`/test/`}>
+				<LINK to={`/test/`} className="heading--reverse">
 					Test
 				</LINK>
 			</div>

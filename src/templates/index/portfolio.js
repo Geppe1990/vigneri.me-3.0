@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import redvalentino from '../../assets/images/redvalentino.png';
+import valentino from '../../assets/images/valentino.png';
+import accenti from '../../assets/images/accenti.png';
+
 
 const PORTFOLIOS = styled.div`
 	.portfolio {
@@ -8,8 +12,21 @@ const PORTFOLIOS = styled.div`
 		margin-bottom: 80px;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: 50%;
-		background-image: url('../assets/images/redvalentino.png');
+
+		&.redvalentino {
+			background-image: url(${redvalentino});
+			background-position-y: 50%;
+		}
+
+		&.valentino {
+			background-image: url(${valentino});
+			background-position-y: 20%;
+		}
+
+		&.accenti {
+			background-image: url(${accenti});
+			background-position-y: 60%;
+		}
 
 		&--link {
 			position: absolute;
@@ -52,20 +69,20 @@ export default () => {
 				<h2 className="heading text-center">Portfolio</h2>
 
 				<PORTFOLIOS>
-					<div className="portfolio">
+					<div className="portfolio redvalentino">
 						<div className="website">
 							<a href="https://www.redvalentino.com" className="heading--reverse">redvalentino.com</a>
 						</div>
 						<a className="portfolio--link heading--reverse" href="https://www.redvalentino.com">red<br />valentino</a>
 					</div>
 
-					<div className="portfolio">
+					<div className="portfolio valentino">
 						<div className="website">
 							<a href="https://www.valentino.com" className="heading--reverse">valentino.com</a>
 						</div>
 						<a className="portfolio--link heading--reverse" href="https://www.valentino.com">valentino</a>
 					</div>
-					<div className="portfolio">
+					<div className="portfolio accenti">
 						<div className="website">
 							<a href="https://giovanisi.it/accenti/" className="heading--reverse">giovanisi.it</a>
 						</div>

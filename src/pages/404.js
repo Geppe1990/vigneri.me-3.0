@@ -1,11 +1,15 @@
-import React from "react"
-import Layout from "../components/layout"
+import React from "react";
+import Layout from "../components/layout";
 
 export default () => (
     <Layout>
-        <h1 className="mb-4">Questa è la pagina 404</h1>
-        <p>
-            We're the only site running on your computer dedicated to showing the best photos and videos of pandas eating lots of food.
-        </p>
+        <div className="section">
+			<div className="container">
+                <h1>Ooops, pagina non trovata!</h1>
+                <p>
+                    Clicca su <em><a href="/">questo link</a></em> per tornare alla Homepage!
+                </p>
+            </div>
+        </div>
     </Layout>
 )
