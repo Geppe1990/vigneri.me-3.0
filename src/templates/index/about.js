@@ -29,40 +29,40 @@ export default () => {
                 <div>
                     <h3>Skills</h3>
                     <ABOUT>
-                            <li>Javascript</li>
-                            <li>ReactJS</li>
-                            <li>nodeJS</li>
-                            <li>PHP</li>
-                            <li>SASS</li>
-                            <li>Bootstrap</li>
-                            <li>Webpack</li>
-                            <li>Gulp/Grunt</li>
-                            <li>Bootstrap</li>
-                            <li>GIT</li>
+                        <li>Javascript</li>
+                        <li>ReactJS</li>
+                        <li>nodeJS</li>
+                        <li>PHP</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                        <li>Webpack</li>
+                        <li>Gulp/Grunt</li>
+                        <li>Bootstrap</li>
+                        <li>GIT</li>
                     </ABOUT>
                 </div>
                 
                 <div>
                     <h3>Clients</h3>
                     <ABOUT>
-                            <li>Yoox</li>
-                            <li>Valentino</li>
-                            <li>Groupama</li>
-                            <li>Città di Ravenna</li>
-                            <li>Regione Toscana</li>
-                            <li>HERA</li>
+                        <li>Yoox</li>
+                        <li>Valentino</li>
+                        <li>Groupama</li>
+                        <li>Città di Ravenna</li>
+                        <li>Regione Toscana</li>
+                        <li>HERA</li>
                     </ABOUT>
                 </div>
                 
                 <div>
                     <h3>Tools</h3>
                     <ABOUT>
-                            <li>Visual Studio Code</li>
-                            <li>Github</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Sketch</li>
-                            <li>Bash</li>
-                            <li>Google Chrome</li>
+                        <li>Visual Studio Code</li>
+                        <li>Github</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Sketch</li>
+                        <li>Bash</li>
+                        <li>Google Chrome</li>
                     </ABOUT>
                 </div>
             </div>

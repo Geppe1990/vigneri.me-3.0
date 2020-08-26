@@ -15,7 +15,7 @@ const EXCERPT = styled.div`
 export default ({ id, img, title, excerpt, slug, category, date}) => {
 	return (
 		<EXCERPT className="card">
-			<div>
+			<React.Fragment>
 				<div>{date}</div>
 				<h3>
 					<Link to={slug}>{title}</Link>
@@ -27,7 +27,7 @@ export default ({ id, img, title, excerpt, slug, category, date}) => {
 						{cat}
 					</span>
 				)}
-			</div>
+			</React.Fragment>
 		</EXCERPT>
 	)
 }

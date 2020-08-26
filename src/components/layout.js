@@ -10,9 +10,9 @@ export default ({ children }) => {
 				<div className="siteWrapper">
 					<Header />
 					<main>
-						<div>
+						<React.Fragment>
 							{children}
-						</div>
+						</React.Fragment>
 					</main>
 					<Footer />
 				</div>

@@ -9,7 +9,7 @@ const PORTFOLIOS = styled.div`
 	.portfolio {
 		min-height: 400px;
 		position: relative;
-		margin-bottom: 80px;
+		margin-top: 50px;
 		background-repeat: no-repeat;
 		background-size: cover;
 
@@ -47,14 +47,9 @@ const PORTFOLIOS = styled.div`
 			}
 		}
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-
 		.website {
 			position: absolute;
 			font-size: 20px;
-			z-index: 999999;
 			width: auto;
 			top: 0;
 			left: 0;

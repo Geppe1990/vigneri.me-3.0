@@ -5,6 +5,26 @@ import PostExcerpt from "../components/post-excerpt";
 import SEO from "../components/SEO";
 import styled from "styled-components";
 
+const PAGINATION = styled.div`
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 0;
+
+	a {
+		margin: 0 5px;
+
+		&:hover {
+			background-color: #222;
+			color: #f9fafb;				
+		} 
+	}
+
+	[aria-current="page"] {
+		background-color: #222;
+		color: #f9fafb;
+	}
+`;
+
 export default ({ data, pageContext }) => {
 	const { currentPage, numPages } = pageContext;
 	const isFirst = currentPage === 1;
@@ -12,25 +32,6 @@ export default ({ data, pageContext }) => {
 	const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString();
 	const nextPage = (currentPage + 1).toString();
 
-	const PAGINATION = styled.div`
-		display: flex;
-		justify-content: center;
-		margin: 20px 0 0;
-
-		a {
-			margin: 0 5px;
-
-			&:hover {
-				background-color: #222;
-				color: #f9fafb;				
-			} 
-		}
-
-		[aria-current="page"] {
-			background-color: #222;
-			color: #f9fafb;
-		}
-	`;
 
 	return (
 		<Layout>
@@ -39,9 +40,7 @@ export default ({ data, pageContext }) => {
 			/>
 			<div className="section">
 				<div className="container">
-					<div>
-						<h1>Blog {data.site.siteMetadata.title}</h1>
-					</div>
+					<h1>Blog {data.site.siteMetadata.title}</h1>
 					<div>
 						<div>
 							{data.allMdx.edges.map(({ node }) => (
