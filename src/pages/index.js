@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout"
 import SEO from "../components/SEO"
 import Intro from "../templates/index/intro";
-import About from "../templates/index/about";
 import Portfolio from "../templates/index/portfolio";
 
 export default ({ data }) => {
@@ -16,7 +15,6 @@ export default ({ data }) => {
 			/>
 			<div>
 				<Intro />
-				<About />
 				<Portfolio />
 			</div>
 		</Layout>

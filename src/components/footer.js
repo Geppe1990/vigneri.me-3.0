@@ -9,6 +9,7 @@ const FOOTER = styled.footer`
     justify-content: space-between;
     border-top: 1px solid ${colors.black};
     padding: 12px;
+    flex-shrink: 0;
     
     ul {
         display: flex;

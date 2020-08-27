@@ -1,4 +1,5 @@
 TODO:
+    - Gestire la posizione del footer (ad es: in /about)
     - Privacy Page
     - GDPR (?)
     - Google Analytics

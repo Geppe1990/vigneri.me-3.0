@@ -21,6 +21,10 @@ const blink = keyframes`
 `;
 
 const GlobalStyles = createGlobalStyle`
+	html, body {
+		height: 100%;	
+	}
+
 	body {
 		color: ${colors.black};
 		background-color: ${colors.white};
@@ -73,9 +77,9 @@ const GlobalStyles = createGlobalStyle`
 
 	.section {
 		display: flex;
-		border-top: 1px solid ${colors.black};
+		/* border-top: 1px solid ${colors.black};
+		min-height: 100vh; */
 		padding: 50px 0;
-		min-height: 100vh;
 		flex-direction: column;
 		justify-content: center;
 	}
@@ -102,7 +106,7 @@ const GlobalStyles = createGlobalStyle`
 
 	.card {
 		padding: 40px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 16px;
 		position: relative;
 		background: rgb(255, 255, 255);
