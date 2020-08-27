@@ -101,10 +101,12 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	.card {
-		padding: 20px;
+		padding: 40px;
 		margin-bottom: 20px;
-		background: #ffffff;
-		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 16px;
+		position: relative;
+		background: rgb(255, 255, 255);
+		border-radius: 16px;
 	
 		&:last-child {
 			margin-bottom: 0;
