@@ -33,14 +33,14 @@ const PORTFOLIOS = styled.div`
 			width: 100%;
 			margin: 0;
 			padding: 0;
-			bottom: 70px;
+			bottom: 30px;
 			right: 30px;
 			display: block;
 			text-align: right;
 			letter-spacing: -0.03em;
 			z-index: 2;
 			line-height: 0.80em;
-			font-size: 160px;
+			font-size: 100px;
 
 			&:hover {
 				text-decoration: none;

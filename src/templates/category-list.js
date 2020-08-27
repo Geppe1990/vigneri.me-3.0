@@ -44,7 +44,7 @@ export default ({ data, pageContext }) => {
 			/>
 			<div className="section">
 				<div className="container">
-					<H1>{category}</H1>
+					<H1 className="hero">{category}</H1>
 					<div>
 						<div>
 							{data.allMdx.edges.map(({ node }) => {
