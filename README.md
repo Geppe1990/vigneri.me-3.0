@@ -1,5 +1,5 @@
 TODO:
-    - Gestire la posizione del footer (ad es: in /about)
+    - Fare una scrollbar carina
     - Privacy Page
     - GDPR (?)
     - Google Analytics
