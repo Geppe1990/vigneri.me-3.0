@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 const EXCERPT = styled.div`
-	h3 {
+	h2 {
 		margin: 0;
 	}
 
@@ -17,9 +17,9 @@ export default ({ id, img, title, excerpt, slug, category, date}) => {
 		<EXCERPT className="card">
 			<React.Fragment>
 				<div>{date}</div>
-				<h3>
+				<h2>
 					<Link to={slug}>{title}</Link>
-				</h3>
+				</h2>
 				<p>{excerpt}</p>
 
 				{category.map((cat, i) =>

@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
 	body {
 		color: ${colors.black};
 		background-color: ${colors.white};
-		font-size: 18px;
+		font-size: 16px;
 		font-family: Source Code Pro;
 		line-height: 1.5;
 		margin: 0;
@@ -81,7 +81,6 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	.heading {
-		font-family: Source Sans Pro;
 	}
 
 	em,
@@ -125,19 +124,36 @@ const GlobalStyles = createGlobalStyle`
 		padding: 0;
 	}
 
-	h1 {
-		font-size: 64px;
+	.hero {
+		font-size: 4rem;
 	}
 
-	h2{
-		font-size: 64px;
+	h1, .h1 { 
+		font-size: 2rem; 
 	}
 
-	h3 {
-		font-size: 42px;
+	h2, .h2 { 
+		font-size: 1.5rem; 
+	}
+
+	h3, .h3 { 
+		font-size: 1.17rem; 
+	}
+	
+	h4, .h4 { 
+		font-size: 1.12rem; 
+	}
+	
+	h5, .h5 { 
+		font-size: .83rem; 
+	}
+	
+	h6, .h6 { 
+		font-size: .75rem; 
 	}
 	
 	.heading {
+		font-family: Source Sans Pro;
 		font-weight: 100;
 		text-shadow: ${shadow.heading};
 		color: #ffffff;

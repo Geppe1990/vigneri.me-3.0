@@ -25,6 +25,10 @@ const PAGINATION = styled.div`
 	}
 `;
 
+const H1 = styled.h1`
+	margin-bottom: 20px;
+`;
+
 export default ({ data, pageContext }) => {
 	const { currentPage, numPages } = pageContext;
 	const isFirst = currentPage === 1;
@@ -40,7 +44,7 @@ export default ({ data, pageContext }) => {
 			/>
 			<div className="section">
 				<div className="container">
-					<h1>Blog {data.site.siteMetadata.title}</h1>
+					<H1>Blog {data.site.siteMetadata.title}</H1>
 					<div>
 						<div>
 							{data.allMdx.edges.map(({ node }) => (

@@ -61,7 +61,7 @@ export default () => {
 	return (
 		<div className="section">
 			<div className="container-fluid">
-				<h2 className="heading text-center">Portfolio</h2>
+				<h2 className="heading text-center hero">Portfolio</h2>
 
 				<PORTFOLIOS>
 					<div className="portfolio redvalentino">

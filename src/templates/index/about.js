@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const ABOUT = styled.ul`
     display: flex;
+    flex-wrap: wrap;
 
     li {
         padding: 0 10px 0 0;
@@ -13,9 +14,9 @@ export default () => {
 	return (
         <div className="section">
             <div className="container">
-                <h2 className="heading text-center">About me</h2>
+                <h2 className="heading text-center hero">About me</h2>
                 <div>
-                    <h3>Social</h3>
+                    <h3 className="h1">Social</h3>
                     <ABOUT>
                         <li><a href="mailto:geppe1990@gmail.com">Mail</a></li>
                         <li><a href="https://github.com/Geppe1990/">Github</a></li>
@@ -27,7 +28,7 @@ export default () => {
                 </div>
                 
                 <div>
-                    <h3>Skills</h3>
+                    <h3 className="h1">Skills</h3>
                     <ABOUT>
                         <li>Javascript</li>
                         <li>ReactJS</li>
@@ -43,7 +44,7 @@ export default () => {
                 </div>
                 
                 <div>
-                    <h3>Clients</h3>
+                    <h3 className="h1">Clients</h3>
                     <ABOUT>
                         <li>Yoox</li>
                         <li>Valentino</li>
@@ -55,7 +56,7 @@ export default () => {
                 </div>
                 
                 <div>
-                    <h3>Tools</h3>
+                    <h3 className="h1">Tools</h3>
                     <ABOUT>
                         <li>Visual Studio Code</li>
                         <li>Github</li>
