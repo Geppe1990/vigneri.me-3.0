@@ -1,4 +1,5 @@
 TODO:
+    - Nell'intro inserire più paragrafi nel messaggio, in modo da spaziare un po', specialmente da mobile
     - Privacy Page
     - GDPR (?)
     - Google Analytics
