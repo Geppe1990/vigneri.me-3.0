@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 const EXCERPT = styled.div`
+	margin-bottom: 50px;
+	
 	h2 {
 		margin: 0;
 	}
@@ -14,12 +16,10 @@ const EXCERPT = styled.div`
 
 export default ({ id, img, title, excerpt, slug, category, date}) => {
 	return (
-		<EXCERPT className="card">
+		<EXCERPT>
 			<React.Fragment>
-				<div>{date}</div>
-				<h2>
-					<Link to={slug}>{title}</Link>
-				</h2>
+				<h2><Link to={slug}>{title}</Link></h2>
+				<small>{date}</small>
 				<p>{excerpt}</p>
 
 				{category.map((cat, i) =>

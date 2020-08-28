@@ -43,7 +43,7 @@ export default ({ data, pageContext }) => {
 				title={`${data.site.siteMetadata.title} - ${category}`}
 			/>
 			<div className="section">
-				<div className="container">
+				<div className="container card">
 					<H1 className="hero">{category}</H1>
 					<div>
 						<div>
