@@ -52,6 +52,22 @@ const GlobalStyles = createGlobalStyle`
 		list-style: none;
 	}
 
+	/* width */
+	::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: ${colors.white};
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: ${colors.black};
+		border-radius: 1px;
+	}
+
 	.text-center {
 		text-align: center;
 	}
