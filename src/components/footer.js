@@ -29,12 +29,19 @@ const FOOTER = styled.footer`
         font-size: 14px;
         text-align: center;
     }
+
+    .social {
+        @media (max-width: 767px) {
+			display: none;
+		}
+    }
+    
 `;
 
 export default () => {
     return (
         <FOOTER>
-            <ul>
+            <ul className="social">
                 <li>
                     <a href="https://www.linkedin.com/in/giuseppevigneri/">
                         <FontAwesomeIcon icon={faLinkedin} />&nbsp;

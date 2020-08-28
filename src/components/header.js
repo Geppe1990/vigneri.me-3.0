@@ -1,6 +1,6 @@
 import React from "react"
-import styled from "styled-components";
 import Menu from "./menu"
+import styled from "styled-components";
 
 const HEADER = styled.header`
     position: fixed;

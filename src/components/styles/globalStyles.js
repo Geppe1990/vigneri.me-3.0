@@ -78,6 +78,11 @@ const GlobalStyles = createGlobalStyle`
     	max-width: 1024px;
 	    margin: 0 auto;
 
+		@media (max-width: 767px) {
+			max-width: 100%;
+			width: auto;
+		}
+
 		&-fluid {
 			width: 100%;
 			height: auto;
@@ -87,20 +92,22 @@ const GlobalStyles = createGlobalStyle`
 		}
 	}
 
-	.section:first-child {
-		border-top: 0;
-	}
-
 	.section {
 		display: flex;
-		/* border-top: 1px solid ${colors.black};
-		min-height: 100vh; */
 		padding: 50px 0;
 		flex-direction: column;
 		justify-content: center;
-	}
 
-	.heading {
+		@media (max-width: 767px) {
+
+			&:first-child {
+				padding-top: 50px;
+			}
+
+			padding: 0;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
 	}
 
 	em,
@@ -128,6 +135,12 @@ const GlobalStyles = createGlobalStyle`
 		background: rgb(255, 255, 255);
 		border-radius: 16px;
 	
+		@media (max-width: 767px) {
+			padding: 30px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -148,6 +161,10 @@ const GlobalStyles = createGlobalStyle`
 
 	.hero {
 		font-size: 4rem;
+
+		@media (max-width: 767px) {
+			font-size: 3rem;
+		}
 	}
 
 	h1, .h1 { 

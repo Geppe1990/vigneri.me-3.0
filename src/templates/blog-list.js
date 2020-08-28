@@ -29,6 +29,18 @@ const H1 = styled.h1`
 	margin-bottom: 20px;
 `;
 
+const BLOG = styled.div`
+	.section {
+		&:first-child {
+			margin-top: 50px;
+			
+			@media (max-width: 767px) {
+				margin-top: 20px;
+			}
+		}
+	}
+`;
+
 export default ({ data, pageContext }) => {
 	const { currentPage, numPages } = pageContext;
 	const isFirst = currentPage === 1;
@@ -42,43 +54,46 @@ export default ({ data, pageContext }) => {
 			<SEO
 				title={`${data.site.siteMetadata.title} - Blog`}
 			/>
-			<div className="section">
-				<div className="container card">
-					<H1 className="hero">Blog {data.site.siteMetadata.title}</H1>
-					<div>
+			<BLOG>
+				<div className="section">
+					<div className="container card">
+						<H1 className="hero">Blog {data.site.siteMetadata.title}</H1>
 						<div>
-							{data.allMdx.edges.map(({ node }) => (
-								<PostExcerpt
-									key={node.id}
-									id={node.id}
-									img={node.frontmatter.image.childImageSharp.fluid.src}
-									title={node.frontmatter.title}
-									excerpt={node.excerpt}
-									slug={node.fields.slug}
-									category={node.frontmatter.category}
-									date={node.frontmatter.date}
-								/>
-							))}
+							<div>
+								{data.allMdx.edges.map(({ node }) => (
+									<PostExcerpt
+										key={node.id}
+										id={node.id}
+										img={node.frontmatter.image.childImageSharp.fluid.src}
+										title={node.frontmatter.title}
+										excerpt={node.excerpt}
+										slug={node.fields.slug}
+										category={node.frontmatter.category}
+										date={node.frontmatter.date}
+									/>
+								))}
+							</div>
+							<PAGINATION>
+								{!isFirst && (
+									<Link
+										to={`/blog/${prevPage}`} rel="next">← Previous Page</Link>
+								)}
+								{Array.from({ length: numPages }, (_, i) => (
+									<Link 
+										key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
+									{i + 1}
+									</Link>
+								))}
+								{!isLast && (
+									<Link 
+									to={`/blog/${nextPage}`} rel="next">Next Page →</Link>
+								)}
+							</PAGINATION>
 						</div>
-						<PAGINATION>
-							{!isFirst && (
-								<Link
-									to={`/blog/${prevPage}`} rel="next">← Previous Page</Link>
-							)}
-							{Array.from({ length: numPages }, (_, i) => (
-								<Link 
-									key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
-								{i + 1}
-								</Link>
-							))}
-							{!isLast && (
-								<Link 
-								to={`/blog/${nextPage}`} rel="next">Next Page →</Link>
-							)}
-						</PAGINATION>
 					</div>
 				</div>
-			</div>
+
+			</BLOG>
 		</Layout>
 	)
 }

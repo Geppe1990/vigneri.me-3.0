@@ -45,6 +45,10 @@ const PORTFOLIOS = styled.div`
 			&:hover {
 				text-decoration: none;
 			}
+
+			@media (max-width: 767px) {
+				display: none;
+			}
 		}
 
 		.website {
