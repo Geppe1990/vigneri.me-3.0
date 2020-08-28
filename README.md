@@ -1,5 +1,4 @@
 TODO:
-    - Fare una scrollbar carina
     - Privacy Page
     - GDPR (?)
     - Google Analytics
