@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
+import Darkmode from "./dark-mode"; 
 import styled from 'styled-components';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const NAV = styled.nav`
 	display: flex;
@@ -38,28 +38,11 @@ export default () => {
 			</div>
 
 			<div>
-				<LINK to={`/blog/`} className="heading--reverse">
-					Blog
-				</LINK>
-				<LINK to={`/about/`} className="heading--reverse">
-					About
-				</LINK>
-				<LINK to={`/test/`} className="heading--reverse">
-					Test
-				</LINK>
+				<LINK to={`/blog/`} className="heading--reverse">Blog</LINK>
+				<LINK to={`/about/`} className="heading--reverse">About</LINK>
+				<LINK to={`/test/`} className="heading--reverse">Test</LINK>
+				<Darkmode />
 			</div>
-			<ThemeToggler>
-        		{({ theme, toggleTheme }) => (
-					<label>
-						<input
-						type="checkbox"
-						onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-						checked={theme === 'dark'}
-						/>{' '}
-						Dark mode
-					</label>
-        		)}
-      		</ThemeToggler>
 		</NAV>
 	)
 }

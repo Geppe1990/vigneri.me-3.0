@@ -14,14 +14,15 @@ const PAGINATION = styled.div`
 		margin: 0 5px;
 
 		&:hover {
-			background-color: #222;
+			background: #222;
 			color: #f9fafb;				
 		} 
 	}
 
 	[aria-current="page"] {
-		background-color: #222;
+		background: #222;
 		color: #f9fafb;
+		transition: color 0.6s ease-out, background 0.6s ease-out;
 
 		.dark & {
 			background-color: #f9fafb;

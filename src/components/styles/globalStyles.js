@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
 
 	body {
 		color: ${colors.black};
-		background-color: ${colors.white};
+		background: ${colors.white};
 		font-size: 16px;
 		font-family: Source Code Pro;
 		line-height: 1.5;
@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
 
 		&.dark {
 			.card {
-				background-color: ${colors.black};
+				background: ${colors.black};
 				color: ${colors.white};
 			}
 
@@ -132,6 +132,7 @@ const GlobalStyles = createGlobalStyle`
 		font-style: inherit;
     	background: ${colors.black};
     	color: ${colors.white};
+		transition: color 0.6s ease-out, background 0.6s ease-out;
 	}
 
 	.tags {
@@ -151,7 +152,8 @@ const GlobalStyles = createGlobalStyle`
 		position: relative;
 		background: rgb(255, 255, 255);
 		border-radius: 16px;
-	
+		transition: color 0.2s ease-out, background 0.2s ease-out;
+
 		@media (max-width: 767px) {
 			padding: 30px;
 			margin-left: 10px;
