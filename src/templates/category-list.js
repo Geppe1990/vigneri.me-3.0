@@ -38,10 +38,9 @@ const H1 = styled.h1`
 const CATEGORY = styled.div`
 	.section {
 		&:first-child {
-			margin-top: 50px;
-
 			@media (max-width: 767px) {
-				margin-top: 20px;
+				margin-top: 0;
+				padding-top: 0;
 			}
 		}
 	}

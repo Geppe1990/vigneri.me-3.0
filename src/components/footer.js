@@ -3,14 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components';
-import colors from "./styles/globalStyles";
 
 const FOOTER = styled.footer`
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid ${colors.black};
+    border-top: 1px solid #222;
     padding: 12px;
     flex-shrink: 0;
+    transition: color 0.6s ease-out, background 0.6s ease-out, border-color 0.6s ease-out;
+
+    .dark & {
+        background: #222;
+        color: #f9fafb;
+        border-color: #222; 
+    }
 
     ul {
         display: flex;
@@ -29,6 +35,10 @@ const FOOTER = styled.footer`
         display: block;
         font-size: 14px;
         text-align: center;
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
     }
 
     .social {

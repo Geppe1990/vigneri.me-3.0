@@ -26,7 +26,6 @@ export default () => {
                             onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
                             checked={theme === 'dark'}
                         />{' '}
-
                         { theme === "dark" ? <FiMoon /> : <FiSun /> }
                     </label>
                 )}

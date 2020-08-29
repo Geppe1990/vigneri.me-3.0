@@ -1,5 +1,4 @@
 TODO:
-    - Inserire dark mode
     - Privacy Page
     - GDPR (?)
     - Google Analytics
