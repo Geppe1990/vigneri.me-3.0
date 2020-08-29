@@ -33,6 +33,10 @@ const GlobalStyles = createGlobalStyle`
 		line-height: 1.5;
 		margin: 0;
 		padding: 0;
+
+		@media (max-width: 767px) {
+			font-size: 14px;
+		}
 	}
 
 	p {
@@ -163,7 +167,7 @@ const GlobalStyles = createGlobalStyle`
 		font-size: 4rem;
 
 		@media (max-width: 767px) {
-			font-size: 3rem;
+			font-size: 2rem;
 		}
 	}
 

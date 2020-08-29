@@ -13,6 +13,10 @@ const PORTFOLIOS = styled.div`
 		background-repeat: no-repeat;
 		background-size: cover;
 
+		@media (max-width: 767px) {
+			margin-top: 20px;
+		}
+
 		&.redvalentino {
 			background-image: url(${redvalentino});
 			background-position-y: 25%;

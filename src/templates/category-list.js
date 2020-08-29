@@ -79,7 +79,7 @@ export default ({ data, pageContext }) => {
 							<PAGINATION>
 								{!isFirst && (
 									<Link
-										to={`/${category}/${prevPage}`} rel="next">← Previous Page</Link>
+										to={`/${category}/${prevPage}`} rel="next">←</Link>
 								)}
 								{Array.from({ length: numPages }, (_, i) => (
 									<Link
@@ -89,7 +89,7 @@ export default ({ data, pageContext }) => {
 								))}
 								{!isLast && (
 									<Link
-										to={`/${category}/${nextPage}`} rel="next">Next Page →</Link>
+										to={`/${category}/${nextPage}`} rel="next">→</Link>
 								)}
 							</PAGINATION>
 						</div>
