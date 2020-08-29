@@ -22,6 +22,11 @@ const PAGINATION = styled.div`
 	[aria-current="page"] {
 		background-color: #222;
 		color: #f9fafb;
+
+		.dark & {
+			background-color: #f9fafb;
+			color: #222;
+		}
 	}
 `;
 

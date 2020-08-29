@@ -37,6 +37,19 @@ const GlobalStyles = createGlobalStyle`
 		@media (max-width: 767px) {
 			font-size: 14px;
 		}
+
+		&.dark {
+			.card {
+				background-color: ${colors.black};
+				color: ${colors.white};
+			}
+
+			em,
+			.tags {
+				color: ${colors.black};
+				background: ${colors.white};
+			}
+		}
 	}
 
 	p {
