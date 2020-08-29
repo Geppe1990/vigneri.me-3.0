@@ -39,6 +39,7 @@ export default ({ data }) => {
 				image={imageSource.src}
 			/>
 			<POST>
+
 				<div className="section">
 					<article className="container card">
 						<Img fluid={imageSource} />
@@ -72,6 +73,7 @@ export const query = graphql`
 			frontmatter {
 				title
 				category
+				description
 				image {
 					childImageSharp {
 						fluid(maxWidth: 1024) {
