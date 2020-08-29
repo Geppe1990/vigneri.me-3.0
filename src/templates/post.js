@@ -6,9 +6,17 @@ import SEO from "../components/SEO";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
-const ARTICLE = styled.article`
-	font-size: 16px;
-	
+const POST = styled.div`
+	.section {
+		&:first-child {
+			margin-top: 50px;
+			
+			@media (max-width: 767px) {
+				margin-top: 20px;
+			}
+		}
+	}
+
 	.text {
 		a {
 			text-decoration: underline;
@@ -31,22 +39,23 @@ export default ({ data }) => {
 				description={post.frontmatter.description || post.excerpt || ''}
 				image={imageSource.src}
 			/>
+			<POST>
+				<div className="section">
+					<article className="container card">
+						<Img fluid={imageSource} />
+						<h1>{post.frontmatter.title}</h1>
+						<TAGS>
+							{post.frontmatter.category.map((category, i) =>
+								<Link className="tags" key={i} to={`/${category}/`}>{category}</Link>
+							)}
+						</TAGS>
 
-			<div className="section">
-				<ARTICLE className="container card">
-					<Img fluid={imageSource} />
-					<h1>{post.frontmatter.title}</h1>
-					<TAGS>
-						{post.frontmatter.category.map((category, i) =>
-							<Link className="tags" key={i} to={`/${category}/`}>{category}</Link>
-						)}
-					</TAGS>
-
-					<div className="text">
-						<MDXRenderer>{post.body}</MDXRenderer>
-					</div>
-				</ARTICLE>
-			</div>
+						<div className="text">
+							<MDXRenderer>{post.body}</MDXRenderer>
+						</div>
+					</article>
+				</div>
+			</POST>
 		</Layout>
 	)
 }

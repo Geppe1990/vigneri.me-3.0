@@ -68,7 +68,7 @@ export default () => {
                 </li>
             </ul>
             <small>
-                {new Date().getFullYear()} Vigneri Giuseppe Via Prove 16 44021 Codigoro (FE) Italy Tel: +39 346 2364389
+                {new Date().getFullYear()} - Made with Gatsby by Vigneri Giuseppe - Ferrara Italy
             </small>
         </FOOTER>
 	)
