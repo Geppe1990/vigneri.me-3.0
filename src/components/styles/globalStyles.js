@@ -147,6 +147,27 @@ const GlobalStyles = createGlobalStyle`
 
 	.card-container {
 		display: flex;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+
+		.card--left {
+			width: 33%;
+			margin-right: 20px;
+		}
+
+		.card--right {
+			width: 66%;
+		}
+
+		.card--left,
+		.card--right {
+			@media (max-width: 767px) {
+				width: auto;
+				margin-right: 10px;
+			}
+		}
 	}
 
 	.card {
@@ -170,6 +191,24 @@ const GlobalStyles = createGlobalStyle`
 			.card-container & {
 				margin-bottom: 40px;
 			}
+		}
+	}
+
+	button {
+		border: 0;
+		cursor: pointer;
+		font-family: inherit;
+		padding: 10px 15px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 16px;
+		position: relative;
+		background: ${colors.black};
+		color: ${colors.white};
+		border-radius: 16px;
+		transition: color 0.2s ease-out, background 0.2s ease-out;
+
+		.dark & {
+			background: ${colors.white};
+			color: ${colors.black};
 		}
 	}
 
