@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter, faInstagram, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPrint } from '@fortawesome/free-solid-svg-icons'
 import labels from "../../labels.json";
 
 const CV = styled.div`
@@ -77,7 +77,11 @@ const CV = styled.div`
 
 			em {
 				margin: 2px;
+				padding: 10px;
 
+				@media (max-width: 767px) {
+					padding: 0;
+				}
 			}
 		}
 	}
@@ -100,7 +104,10 @@ const Cv = () => {
 						</p>
 						<div className="text-center ctaWrapper">
 							<button onClick={ () => toggleLanguage() } className="no-print">{label.cta}</button>
-							<button className="no-print">{label.pdf}</button>
+							<button onClick={ () => window.print() } className="no-print">
+								<FontAwesomeIcon icon={faPrint} style={{marginRight: "10px"}} />
+								{label.print}
+							</button>
 						</div>
 					</div>
 
