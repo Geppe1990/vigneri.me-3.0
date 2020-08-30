@@ -68,7 +68,7 @@ const Cv = () => {
 							{label.intro}
 						</p>
 						<div class="text-center">
-							<button onClick={ () => toggleLanguage() } class="primary-button">{label.cta}</button>
+							<button onClick={ () => toggleLanguage() } className="no-print">{label.cta}</button>
 						</div>
 					</div>
 
@@ -78,7 +78,7 @@ const Cv = () => {
 							
 							<div className="block">
 								<h3>{label.address}</h3>
-								<span>Via Prove 16, Codigoro, 44021, Italia</span>
+								<span>{label.addressDescription}</span>
 							</div>
 
 							<div className="block">
@@ -104,67 +104,53 @@ const Cv = () => {
 						</div>
 
 						<div className="cv-carriera card card--right">
-							<h2>{isMainLanguage ? "Carriera Lavorativa" : ""}</h2>
+							<h2>{label.work}</h2>
 							<div className="block">
 								<h3>Web Developer, YOOX NET-A-PORTER GROUP</h3>
-								<small><span>{isMainLanguage ? "Giu 2019 — Presente" : ""}</span><span>Zola Predosa(BO)</span></small>
-								<span>
-									{isMainLanguage ? 
-										"Sviluppo di flagagship excommerce nel settore luyury fashion che sfruttano la combinazione di un progetto MVC su framework .net per la parte ecommerce, e la piattaforma CoreMedia per landing page, news e blog. Per questi progetti ho sviluppato diversi componenti frontend in Javascript ES6, React, .net, SASS e task runner Javascript." 
-										: 
-										""
-									}
-								</span>
+								<small><span>{label.ynapDate}</span><span>Zola Predosa(BO)</span></small>
+								<span>{label.ynapDescription}</span>
 							</div>
 							<div className="block">
 								<h3>Web Developer, PRONESIS</h3>
-								<small><span>Gen 2017 — Giu 2019</span> <span>Ferrara</span></small>
-								<span>Sviluppo di excommerce e siti istituzionali con CES PrestaShop e
-								WordPress sviluppando principalmente in PHP (e relativo motore di
-								markup Smarty), Javascript, jQuery e SASS.</span>
+								<small><span>{label.pronesisDate}</span> <span>Ferrara</span></small>
+								<span>{label.pronesisDescription}</span>
 							</div>
 							<div className="block">
 								<h3>Web Developer, OFFICINE DIGITALI</h3>
-								<small><span>Giu 2016 — Gen 2017</span><span>Bologna</span></small>
-								<span>Sviluppo di siti istituzionali legati alla PA sfruttando i CES WordPress e
-								Drupal o creando soluzioni adxhoc in PHP per quanto riguarda la parte
-								backend e Javascript, SASS e jQuery per la parte frontend</span>
+								<small><span>{label.ODDate}</span><span>Bologna</span></small>
+								<span>{label.ODDescription}</span>
 							</div>
 						</div>
 					</div>
 					<div className="card-container">
 						<div className="cv-lingue card card--left">
-							<h2>Lingue</h2>
+							<h2>{label.languages}</h2>
 							<div className="block">
-								Italiano (Madrelingua)
+								{label.it}
 							</div>
 							<div className="block">
-								Inglese (Intermedio)
+								{label.en}
 							</div>
 							<div className="block">
-								Francese (Base)
+								{label.fr}
 							</div>
 						</div>
 						<div className="cv-istruzione card card--right">
-							<h2>Istruzione e Formazione</h2>
+							<h2>{label.education}</h2>
 							<div className="block">
-								<h3>Tecnico di Comunicazione e Informazione</h3>
+								<h3>{label.eciparTitle}</h3>
 								<small><span>Ecipar</span><span>Ferrara</span></small>
-								<span>Come tecnico della comunicazione C Informazione sono in grado di
-									progettare, sviluppare, gestire e coordinare azioni comunicative in
-									funzione dei fabbisogni rilevati, di predisporre testi scritti e adottare stili
-									e concetti comunicativi efDcaci e adeguati al contesto.
-								</span>
+								<span>{label.eciparDescription}</span>
 							</div>
 							<div className="block">
-								<h3>Diploma in Elettronica & telecomunicazioni</h3>
+								<h3>{label.itiTitle}</h3>
 								<small><span>ITI N. Copernico - A. Carpeggiani</span><span>Ferrara</span></small>
 							</div>
 						</div>
 					</div>
 
 					<div className="cv-competenze card">
-						<h2>Competenze</h2>
+						<h2>{label.skills}</h2>
 						<div className="block">
 							<div className="wrapper">
 								<em>HTML</em>
@@ -200,7 +186,7 @@ const Cv = () => {
 					</div>
 
 					<div className="cv-contatti card">
-						<h2>Contatti</h2>
+						<h2>{label.contacts}</h2>
 						<div className="block">
 							<div className="wrapper">
 								<a href="https://www.linkedin.com/in/giuseppevigneri/">

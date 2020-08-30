@@ -12,11 +12,11 @@ const shadow = {
 
 const blink = keyframes`
   from, to {
-    color: transparent;
+	color: transparent;
   }
 
   50% {
-    color: inherit;
+	color: inherit;
   }
 `;
 
@@ -91,9 +91,9 @@ const GlobalStyles = createGlobalStyle`
 
 	.container {
 		position: relative;
-    	width: 90%;
-    	max-width: 1024px;
-	    margin: 0 auto;
+		width: 90%;
+		max-width: 1024px;
+		margin: 0 auto;
 
 		@media (max-width: 767px) {
 			max-width: 100%;
@@ -130,8 +130,8 @@ const GlobalStyles = createGlobalStyle`
 	em,
 	.tags {
 		font-style: inherit;
-    	background: ${colors.black};
-    	color: ${colors.white};
+		background: ${colors.black};
+		color: ${colors.white};
 		transition: color 0.6s ease-out, background 0.6s ease-out;
 	}
 
@@ -265,6 +265,13 @@ const GlobalStyles = createGlobalStyle`
 
 		&--reverse {
 			text-shadow: ${shadow.heading_reverse};
+		}
+	}
+
+	@media print {
+		.no-print, .no-print *
+		{
+			display: none !important;
 		}
 	}
 `

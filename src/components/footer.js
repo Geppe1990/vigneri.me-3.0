@@ -51,7 +51,7 @@ const FOOTER = styled.footer`
 
 export default () => {
     return (
-        <FOOTER>
+        <FOOTER className="no-print">
             <ul className="social">
                 <li>
                     <a href="https://www.linkedin.com/in/giuseppevigneri/">

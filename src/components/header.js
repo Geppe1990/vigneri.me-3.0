@@ -8,7 +8,7 @@ const HEADER = styled.header`
 
 export default () => {
     return (
-        <HEADER>
+        <HEADER className="no-print">
             <Menu />
         </HEADER>
 	)
