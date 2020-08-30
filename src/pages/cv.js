@@ -27,13 +27,44 @@ const CV = styled.div`
 	}
 
 	.cv {
+		&-intro {
+			.ctaWrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				button {
+					margin-top: 10px;
+
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
 		&-contatti {
 			.wrapper {
 				display: flex;
 				justify-content: center;
 
+				@media print {
+					flex-direction: column;
+				}
+
 				a {
 					padding: 0 20px;
+
+					@media print {
+						padding: 0;
+					}
+
+					span {
+						@media print {
+							display: inline-block;
+							margin-left: 10px;
+						}
+					}
 				}
 			}
 		}
@@ -67,8 +98,9 @@ const Cv = () => {
 						<p className="text-center">
 							{label.intro}
 						</p>
-						<div class="text-center">
+						<div className="text-center ctaWrapper">
 							<button onClick={ () => toggleLanguage() } className="no-print">{label.cta}</button>
+							<button className="no-print">{label.pdf}</button>
 						</div>
 					</div>
 
@@ -191,21 +223,27 @@ const Cv = () => {
 							<div className="wrapper">
 								<a href="https://www.linkedin.com/in/giuseppevigneri/">
 									<FontAwesomeIcon icon={faLinkedin} />
+									<span className="print">https://www.linkedin.com/in/giuseppevigneri/</span>
 								</a>
 								<a href="https://github.com/Geppe1990">
 									<FontAwesomeIcon icon={faGithub} />
+									<span className="print">https://github.com/Geppe1990</span>
 								</a>
 								<a href="https://twitter.com/ioSonoGeppe">
 									<FontAwesomeIcon icon={faTwitter} />
+									<span className="print">https://twitter.com/ioSonoGeppe</span>
 								</a>
 								<a href="https://www.instagram.com/geppegram/">
 									<FontAwesomeIcon icon={faInstagram} />
+									<span className="print">https://www.instagram.com/geppegram/</span>
 								</a>
 								<a href="tg://resolve?domain=geppegram">
 									<FontAwesomeIcon icon={faTelegramPlane} />
+									<span className="print">geppegram</span>
 								</a>
 								<a href="mailto:geppe1990@gmail.com">
 									<FontAwesomeIcon icon={faEnvelope} />
+									<span className="print">geppe1990@gmail.com</span>
 								</a>
 							</div>
 						</div>

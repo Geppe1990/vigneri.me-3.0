@@ -268,10 +268,18 @@ const GlobalStyles = createGlobalStyle`
 		}
 	}
 
+	.print {
+		display: none;
+	}
+
 	@media print {
 		.no-print, .no-print *
 		{
 			display: none !important;
+		}
+
+		.print, .print * {
+			display: block;
 		}
 	}
 `
