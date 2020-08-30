@@ -39,7 +39,7 @@ export default () => {
 
 			<div>
 				<LINK to={`/blog/`} className="heading--reverse">Blog</LINK>
-				<LINK to={`/about/`} className="heading--reverse">About</LINK>
+				<LINK to={`/cv/`} className="heading--reverse">CV</LINK>
 				<LINK to={`/test/`} className="heading--reverse">Test</LINK>
 				<Darkmode />
 			</div>

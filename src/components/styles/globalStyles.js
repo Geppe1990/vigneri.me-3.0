@@ -145,6 +145,10 @@ const GlobalStyles = createGlobalStyle`
 		}
 	}
 
+	.card-container {
+		display: flex;
+	}
+
 	.card {
 		padding: 40px;
 		margin-bottom: 40px;
@@ -162,6 +166,10 @@ const GlobalStyles = createGlobalStyle`
 
 		&:last-child {
 			margin-bottom: 0;
+			
+			.card-container & {
+				margin-bottom: 40px;
+			}
 		}
 	}
 
