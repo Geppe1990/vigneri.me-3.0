@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
@@ -79,7 +80,8 @@ export default () => {
                 </li>
             </ul>
             <small>
-                {new Date().getFullYear()} - Made with <FontAwesomeIcon icon={faHeart} /> and Gatsby by Vigneri Giuseppe - Ferrara Italy
+                {new Date().getFullYear()} - Made with <FontAwesomeIcon icon={faHeart} /> and Gatsby by Vigneri Giuseppe - <Link to={`/privacy/`} className="heading--reverse">Privacy</Link>
+
             </small>
         </FOOTER>
 	)

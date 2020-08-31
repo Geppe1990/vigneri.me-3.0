@@ -40,7 +40,6 @@ export default () => {
 			<div>
 				<LINK to={`/blog/`} className="heading--reverse">Blog</LINK>
 				<LINK to={`/cv/`} className="heading--reverse">CV</LINK>
-				<LINK to={`/privacy/`} className="heading--reverse">Privacy</LINK>
 				<Darkmode />
 			</div>
 		</NAV>
