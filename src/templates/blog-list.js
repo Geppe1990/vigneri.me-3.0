@@ -8,7 +8,7 @@ import styled from "styled-components";
 const PAGINATION = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 20px 0 0;
+	padding: 10px 40px;
 
 	a {
 		margin: 0 5px;
@@ -44,6 +44,10 @@ const BLOG = styled.div`
 			}
 		}
 	}
+
+	.hero {
+		margin: 0;
+	}
 `;
 
 export default ({ data, pageContext }) => {
@@ -61,9 +65,12 @@ export default ({ data, pageContext }) => {
 			/>
 			<BLOG>
 				<div className="section">
+
 					<div className="container card">
 						<H1 className="hero">Blog {data.site.siteMetadata.title}</H1>
-						<div>
+					</div>
+					<div>
+						<div className="container card">
 							<div>
 								{data.allMdx.edges.map(({ node }) => (
 									<PostExcerpt
@@ -78,26 +85,25 @@ export default ({ data, pageContext }) => {
 									/>
 								))}
 							</div>
-							<PAGINATION>
-								{!isFirst && (
-									<Link
-										to={`/blog/${prevPage}`} rel="next">←</Link>
-								)}
-								{Array.from({ length: numPages }, (_, i) => (
-									<Link 
-										key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
-									{i + 1}
-									</Link>
-								))}
-								{!isLast && (
-									<Link 
-									to={`/blog/${nextPage}`} rel="next">→</Link>
-								)}
-							</PAGINATION>
 						</div>
+						<PAGINATION className="container card">
+							{!isFirst && (
+								<Link
+									to={`/blog/${prevPage}`} rel="next">←</Link>
+							)}
+							{Array.from({ length: numPages }, (_, i) => (
+								<Link 
+									key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
+								{i + 1}
+								</Link>
+							))}
+							{!isLast && (
+								<Link 
+								to={`/blog/${nextPage}`} rel="next">→</Link>
+							)}
+						</PAGINATION>
 					</div>
 				</div>
-
 			</BLOG>
 		</Layout>
 	)

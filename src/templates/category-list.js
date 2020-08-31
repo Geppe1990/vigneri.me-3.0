@@ -8,7 +8,7 @@ import styled from "styled-components";
 const PAGINATION = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 20px 0 0;
+	padding: 10px 40px;
 
 	a {
 		margin: 0 5px;
@@ -44,6 +44,10 @@ const CATEGORY = styled.div`
 			}
 		}
 	}
+
+	.hero {
+		margin: 0;
+	}
 `;
 
 export default ({ data, pageContext }) => {
@@ -64,7 +68,9 @@ export default ({ data, pageContext }) => {
 				<div className="section">
 					<div className="container card">
 						<H1 className="hero">{category}</H1>
-						<div>
+					</div>
+					<div>
+						<div className="container card">
 							<div>
 								{data.allMdx.edges.map(({ node }) => {
 									return (
@@ -81,23 +87,23 @@ export default ({ data, pageContext }) => {
 									)
 								})}
 							</div>
-							<PAGINATION>
-								{!isFirst && (
-									<Link
-										to={`/${category}/${prevPage}`} rel="next">←</Link>
-								)}
-								{Array.from({ length: numPages }, (_, i) => (
-									<Link
-										key={`pagination-number${i + 1}`} to={`/${category}/${i === 0 ? "" : i + 1}`}>
-									{i + 1}
-									</Link>
-								))}
-								{!isLast && (
-									<Link
-										to={`/${category}/${nextPage}`} rel="next">→</Link>
-								)}
-							</PAGINATION>
 						</div>
+						<PAGINATION className="container card">
+							{!isFirst && (
+								<Link
+									to={`/${category}/${prevPage}`} rel="next">←</Link>
+							)}
+							{Array.from({ length: numPages }, (_, i) => (
+								<Link
+									key={`pagination-number${i + 1}`} to={`/${category}/${i === 0 ? "" : i + 1}`}>
+								{i + 1}
+								</Link>
+							))}
+							{!isLast && (
+								<Link
+									to={`/${category}/${nextPage}`} rel="next">→</Link>
+							)}
+						</PAGINATION>
 					</div>
 				</div>
 			</CATEGORY>
