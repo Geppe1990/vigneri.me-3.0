@@ -9,11 +9,9 @@ module.exports = {
 	siteMetadata: {
 		title: "vigneri.me",
 		titleTemplate: "Vigneri Giuseppe - Front-end Web Developer",
-		description: "Questa è la descrizione del sito",
-		url: "http://localhost:8000",
-		siteUrl: "http://localhost:8000",
-		image: "/src/assets/image.jpg",
-		twitterUsername: "@geppegram",
+		description: "Sono uno sviluppatore Web e Software specializzato in Javascript, React e Python",
+		url: "https://www.vigneri.me",
+		siteUrl: "https://www.vigneri.me",
 	},
 	plugins: [
 		'gatsby-remark-images',
