@@ -12,6 +12,10 @@ const EXCERPT = styled.div`
 	.tags {
 		font-size: 14px;
 	}
+
+	p {
+		margin-bottom: 0;
+	}
 `;
 
 export default ({ id, img, title, excerpt, slug, category, date}) => {
@@ -21,12 +25,6 @@ export default ({ id, img, title, excerpt, slug, category, date}) => {
 				<h2><Link to={slug}>{title}</Link></h2>
 				<small>{date}</small>
 				<p>{excerpt}</p>
-
-				{category.map((cat, i) =>
-					<span className="tags" key={i}>
-						{cat}
-					</span>
-				)}
 			</React.Fragment>
 		</EXCERPT>
 	)
