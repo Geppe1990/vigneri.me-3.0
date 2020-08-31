@@ -8,7 +8,10 @@ import styled from "styled-components";
 const PAGINATION = styled.div`
 	display: flex;
 	justify-content: center;
-	padding: 10px 40px;
+
+	&.card {
+		padding: 10px 40px;
+	}
 
 	a {
 		margin: 0 5px;
