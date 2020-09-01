@@ -28,8 +28,8 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-			  name: `images`,
-			  path: `${__dirname}/src/assets/images`,
+				name: `images`,
+				path: `${__dirname}/src/assets/images`,
 			},
 		},
 		{
@@ -52,7 +52,9 @@ module.exports = {
 		{
 			resolve: "gatsby-plugin-page-progress",
 			options: {
-				includePaths: ["/", { regex: "^/blog/*" }],
+				includePaths: ["/", {
+					regex: "^/blog/*"
+				}],
 				excludePaths: ["/"],
 				height: 3,
 				prependToBody: false,
@@ -76,8 +78,7 @@ module.exports = {
 				theme_color: '#ef5350',
 				display: 'standalone',
 				icon: 'src/assets/images/icon.png',
-				icons: [
-					{
+				icons: [{
 						src: `/favicons/android-chrome-192x192.png`,
 						sizes: `192x192`,
 						type: `image/png`,
@@ -103,7 +104,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-feed`,
 			options: {
-			  query: `
+				query: `
 				{
 				  site {
 					siteMetadata {
@@ -115,16 +116,22 @@ module.exports = {
 				  }
 				}
 			  `,
-			  feeds: [
-				{
-					serialize: ({ query: { site, allMdx } }) => {
+				feeds: [{
+					serialize: ({
+						query: {
+							site,
+							allMdx
+						}
+					}) => {
 						return allMdx.edges.map(edge => {
 							return Object.assign({}, edge.node.frontmatter, {
 								description: edge.node.excerpt,
 								date: edge.node.frontmatter.date,
 								url: site.siteMetadata.siteUrl + edge.node.fields.slug,
 								guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-								custom_elements: [{ "content:encoded": edge.node.html }],
+								custom_elements: [{
+									"content:encoded": edge.node.html
+								}],
 							})
 						})
 					},
@@ -149,9 +156,19 @@ module.exports = {
 					`,
 					output: "/rss.xml",
 					title: "Vigneri Giuseppe RSS Feed",
-				},
-			  ],
+				}, ],
 			},
-		  },
+		},
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://www.vigneri.me',
+				sitemap: 'https://www.vigneri.me/sitemap.xml',
+				policy: [{
+					userAgent: '*',
+					allow: '/'
+				}]
+			}
+		}
 	],
 }
