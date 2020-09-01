@@ -2,7 +2,7 @@
 	"cv": {
 		"ita": {
 			"intro": "Da sempre appassionato e curioso del mondo tecnologico. Sono uno sviluppatore web con esperienza nel campo dello sviluppo web e software, dove poter applicare le mie conoscenze e poter crescere professionalmente. Reputo che il costante aggiornamento sia una skill essenziale in questo settore, ed è per questo che dedico parte della mia settimana a corsi e ad aggiornamenti tecnici per accrescere le mie competenze",
-			"cta": "Click here for the english version",
+			"cta": "English version",
 			"print": "Stampa",
 			"headingInfo": "Informazioni",
 			"address": "Indirizzo",
@@ -32,7 +32,7 @@
 		},
 		"eng": {
 			"intro": "Always passionate and curious about the technological world. I am a web developer with experience in the field of web and software development, where I can apply my knowledge and be able to grow professionally. I believe that constant updating is an essential skill in this sector, and that is why I dedicate part of my week to courses and technical updates to increase my skills",
-			"cta": "Clicca qui per la versione italiana",
+			"cta": "Versione italiana",
 			"print": "Print",
 			"headingInfo": "Informations",
 			"address": "Address",
