@@ -13,10 +13,14 @@ const FOOTER = styled.footer`
     flex-shrink: 0;
     transition: color 0.6s ease-out, background 0.6s ease-out, border-color 0.6s ease-out;
 
+    a {
+        text-shadow: unset;
+    }
+
     .dark & {
-        background: #222;
+        background: inherit;
         color: #f9fafb;
-        border-color: #222; 
+        border: none;
     }
 
     ul {

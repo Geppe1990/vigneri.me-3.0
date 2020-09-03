@@ -12,6 +12,10 @@ const DARKMODE = styled.div`
 
     label {
         cursor: pointer;
+
+        .dark & {
+            color: #f9fafb;
+        }
     }
 `;
 

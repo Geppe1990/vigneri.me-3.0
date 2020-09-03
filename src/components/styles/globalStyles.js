@@ -33,12 +33,15 @@ const GlobalStyles = createGlobalStyle`
 		line-height: 1.5;
 		margin: 0;
 		padding: 0;
+		
 
 		@media (max-width: 767px) {
 			font-size: 14px;
 		}
 
 		&.dark {
+			background: linear-gradient(to right, #414345, #232526);
+
 			.card {
 				background: ${colors.black};
 				color: ${colors.white};
@@ -177,7 +180,7 @@ const GlobalStyles = createGlobalStyle`
 		position: relative;
 		background: rgb(255, 255, 255);
 		border-radius: 16px;
-		transition: color 0.2s ease-out, background 0.2s ease-out;
+		transition: color 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out;
 
 		@media (max-width: 767px) {
 			padding: 30px;
@@ -191,6 +194,10 @@ const GlobalStyles = createGlobalStyle`
 			.card-container & {
 				margin-bottom: 40px;
 			}
+		}
+
+		.dark & {
+			box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 16px;
 		}
 	}
 
