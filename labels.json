@@ -1,7 +1,7 @@
 {
 	"cv": {
 		"ita": {
-			"intro": "Da sempre appassionato e curioso del mondo tecnologico. Sono uno sviluppatore web con esperienza nel campo dello sviluppo web e software, dove poter applicare le mie conoscenze e poter crescere professionalmente. Reputo che il costante aggiornamento sia una skill essenziale in questo settore, ed è per questo che dedico parte della mia settimana a corsi e ad aggiornamenti tecnici per accrescere le mie competenze",
+			"intro": "Da sempre appassionato e curioso del mondo tecnologico. Sono uno sviluppatore web con esperienza nel campo dello sviluppo web e software, sempre alla ricerca di nuove possibilità per poter applicare le mie conoscenze e poter crescere professionalmente. Reputo che il costante aggiornamento sia una skill essenziale in questo settore, ed è per questo che dedico parte della mia settimana a corsi e ad aggiornamenti tecnici per accrescere le mie competenze",
 			"cta": "English version",
 			"print": "Stampa",
 			"headingInfo": "Informazioni",
@@ -12,7 +12,7 @@
 			"birthDescription": "03/02/1990 - Codigoro (FE)",
 			"nationality": "Nazionalità",
 			"nationalityDescription": "Italiana",
-			"ynapDescription": "Sviluppo di flagagship ecommerce nel settore luyury fashion che sfruttano la combinazione di un progetto MVC su framework .net per la parte ecommerce, e la piattaforma CoreMedia per landing page, news e blog. Per questi progetti ho sviluppato diversi componenti frontend in Javascript ES6, React, .net, SASS e task runner Javascript",
+			"ynapDescription": "Sviluppo di flaggship ecommerce nel settore luxury fashion che sfruttano la combinazione di un progetto MVC su framework .net per la parte ecommerce, e la piattaforma CoreMedia per landing page, news e blog. Per questi progetti ho sviluppato diversi componenti frontend in Javascript ES6, React, .net, SASS e con l'ausilio di task runner Javascript",
 			"pronesisDescription": "Sviluppo di ecommerce e siti istituzionali con CMS PrestaShop e WordPress sviluppando principalmente in PHP (e relativo motore di markup Smarty), Javascript, jQuery e SASS",
 			"ODDescription": "Sviluppo di siti istituzionali legati alla PA sfruttando i CMS WordPress e Drupal o creando soluzioni ad-hoc in PHP per quanto riguarda la parte backend e Javascript, SASS e jQuery per la parte frontend",
 			"work": "Carriera Lavorativa",
