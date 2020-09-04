@@ -119,9 +119,9 @@ const GlobalStyles = createGlobalStyle`
 		justify-content: center;
 
 		@media (max-width: 767px) {
-
 			&:first-child {
-				padding-top: 50px;
+				margin-top: 0;
+				padding-top: 0;
 			}
 
 			padding: 0;
