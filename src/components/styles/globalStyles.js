@@ -189,8 +189,6 @@ const GlobalStyles = createGlobalStyle`
 		}
 
 		&:last-child {
-			margin-bottom: 0;
-			
 			.card-container & {
 				margin-bottom: 40px;
 			}
