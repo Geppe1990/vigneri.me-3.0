@@ -7,7 +7,7 @@ export default () => (
 			<div className="container card">
 				<h1 className="hero">Mentoring e coaching</h1>
 				<p>
-					Mi ricordo benissimo quando ho intrapreso il mio percorso che mi ha portato a diventare uno sviluppatore Web.<br/>
+					Mi ricordo benissimo quando ho intrapreso il mio percorso che mi ha portato a diventare uno sviluppatore.<br/>
 					Ai tempi le risorse su cui studiare al di fuori dell'ambiente accademico erano veramente poche e spesso non era chiaro quale percorso seguire.
 				</p> 
 				<p>Per questo motivo voglio propormi senza nessuna tipologia di impegno per mentoring e coaching.</p>
