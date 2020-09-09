@@ -34,6 +34,7 @@ const FOOTER = styled.footer`
         list-style: none;
         margin: 0 7px;
         font-size: 14px;
+        padding-bottom: 0;
     }
 
     small {

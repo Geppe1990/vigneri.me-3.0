@@ -70,6 +70,7 @@ const GlobalStyles = createGlobalStyle`
 
 	li {
 		list-style: none;
+		padding-bottom: 10px;
 	}
 
 	/* width */
