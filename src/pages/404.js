@@ -7,7 +7,7 @@ export default () => (
 			<div className="container card">
                 <h1 className="hero">Ooops, pagina non trovata!</h1>
                 <p>
-                    Clicca <a href="/">qui</a> per tornare alla Homepage!
+                    Clicca <em><a href="/">qui</a></em> per tornare alla Homepage!
                 </p>
             </div>
         </div>
