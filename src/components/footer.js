@@ -1,9 +1,12 @@
 import React from "react"
 import { Link } from "gatsby";
+import { config } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components';
+
+config.autoAddCss = false
 
 const FOOTER = styled.footer`
     display: flex;

@@ -2,10 +2,13 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components";
+import { config } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter, faInstagram, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faPrint, faFlag } from '@fortawesome/free-solid-svg-icons'
 import labels from "../../labels.json";
+
+config.autoAddCss = false
 
 const CV = styled.div`
 	.block {
