@@ -68,7 +68,7 @@ const PORTFOLIOS = styled.div`
 export default () => {
 	return (
 		<div className="section">
-			<div className="container card">
+			<div className="card">
 				<h2 className="heading text-center hero">Portfolio</h2>
 
 				<PORTFOLIOS>

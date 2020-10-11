@@ -16,7 +16,7 @@ const INTRO = styled.div`
 export default () => {
 	return (
         <INTRO className="section">
-            <div className="container card">
+            <div className="card">
                 <h1 className="hero"><em>Giuseppe Vigneri</em>, <span className="typing">Front-end Web Developer</span></h1>
                 <p>Ciao e benvenuto nel mio sito! Mi chiamo Giuseppe e sono uno sviluppatore Web e Software. </p>
                 <p>Le mie skills spaziano da <em>Javascript</em> a <em>React</em>, <em>PHP</em>, <em>SASS</em>, <em>Python</em>, <em>GIT</em> e ovviamente <em>HTML5</em> e <em>CSS3</em>. Lavoro seguendo una metodologia di lavoro Kanban / Agile.</p>

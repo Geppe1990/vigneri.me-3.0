@@ -38,10 +38,9 @@ export default ({ data }) => {
 				description={post.frontmatter.description || post.excerpt || ''}
 				image={imageSource.src}
 			/>
-			<POST>
-
+			<POST className="container">
 				<div className="section">
-					<article className="container card">
+					<article className="card">
 						<Img fluid={imageSource} />
 						<h1>{post.frontmatter.title}</h1>
 						<TAGS>

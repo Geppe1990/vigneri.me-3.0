@@ -26,7 +26,7 @@ export default ({ data }) => {
 				description={data.site.siteMetadata.description || ''}
 				pathname={data.site.siteMetadata.url}
 			/>
-			<INDEX>
+			<INDEX className="container">
 				<Intro />
 				<About />
 				<Portfolio />

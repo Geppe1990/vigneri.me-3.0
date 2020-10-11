@@ -66,14 +66,14 @@ export default ({ data, pageContext }) => {
 			<SEO
 				title={`${data.site.siteMetadata.title} - Blog`}
 			/>
-			<BLOG>
+			<BLOG className="container">
 				<div className="section">
 
-					<div className="container card">
+					<div className="card">
 						<H1 className="hero">Blog {data.site.siteMetadata.title}</H1>
 					</div>
 					<div>
-						<div className="container card">
+						<div className="card">
 							<div>
 								{data.allMdx.edges.map(({ node }) => (
 									<PostExcerpt
@@ -89,7 +89,7 @@ export default ({ data, pageContext }) => {
 								))}
 							</div>
 						</div>
-						<PAGINATION className="container card">
+						<PAGINATION className="card">
 							{!isFirst && (
 								<Link
 									to={`/blog/${prevPage}`} rel="next">←</Link>

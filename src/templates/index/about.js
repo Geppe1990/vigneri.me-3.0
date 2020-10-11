@@ -13,7 +13,7 @@ const ABOUT = styled.ul`
 export default () => {
 	return (
         <div className="section">
-            <div className="container card">
+            <div className="card">
                 <h2 className="heading text-center hero">About me</h2>
                 <div>
                     <h3 className="h1">Social</h3>
