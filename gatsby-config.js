@@ -14,6 +14,7 @@ module.exports = {
 		siteUrl: "https://www.vigneri.me",
 	},
 	plugins: [
+		'gatsby-plugin-netlify',
 		'gatsby-remark-images',
 		{
 			resolve: 'gatsby-source-filesystem',
