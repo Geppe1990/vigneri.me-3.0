@@ -1,12 +1,7 @@
 import React from "react"
 import { Link } from "gatsby";
-import { config } from "@fortawesome/fontawesome-svg-core"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHeart } from 'react-icons/fa'
 import styled from 'styled-components';
-
-config.autoAddCss = false
 
 const FOOTER = styled.footer`
     display: flex;
@@ -64,31 +59,31 @@ export default () => {
             <ul className="social">
                 <li>
                     <a href="https://www.linkedin.com/in/giuseppevigneri/">
-                        <FontAwesomeIcon icon={faLinkedin} />&nbsp;
+                        <FaLinkedin />&nbsp;
                          <span>LinkedIn</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/Geppe1990">
-                    <FontAwesomeIcon icon={faGithub} />&nbsp;
+                    <FaGithub />&nbsp;
                          <span>Github</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/ioSonoGeppe">
-                        <FontAwesomeIcon icon={faTwitter} />&nbsp;
+                        <FaTwitter />&nbsp;
                          <span>Twitter</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/geppegram/">
-                        <FontAwesomeIcon icon={faInstagram} />&nbsp;
+                        <FaInstagram />&nbsp;
                          <span>Instagram</span>
                     </a>
                 </li>
             </ul>
             <small>
-                {new Date().getFullYear()} - Made with <FontAwesomeIcon icon={faHeart} /> and Gatsby by Vigneri Giuseppe - <Link to={`/privacy/`} className="heading--reverse">Privacy</Link>
+                {new Date().getFullYear()} - Made with <FaHeart /> and Gatsby by Vigneri Giuseppe - <Link to={`/privacy/`} className="heading--reverse">Privacy</Link>
 
             </small>
         </FOOTER>

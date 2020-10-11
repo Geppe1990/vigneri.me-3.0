@@ -2,13 +2,8 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components";
-import { config } from "@fortawesome/fontawesome-svg-core"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faTwitter, faInstagram, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faPrint, faFlag } from '@fortawesome/free-solid-svg-icons'
+import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram, FaTelegramPlane, FaEnvelope, FaPrint, FaFlag } from 'react-icons/fa'
 import labels from "../../labels.json";
-
-config.autoAddCss = false
 
 const CV = styled.div`
 	.block {
@@ -107,11 +102,11 @@ const Cv = () => {
 						</p>
 						<div className="text-center ctaWrapper">
 							<button onClick={ () => toggleLanguage() } className="no-print">
-								<FontAwesomeIcon icon={faFlag} style={{marginRight: "10px"}} />
+								<FaFlag style={{marginRight: "10px"}} />
 								{label.cta}
 							</button>
 							<button onClick={ () => window.print() } className="no-print">
-								<FontAwesomeIcon icon={faPrint} style={{marginRight: "10px"}} />
+								<FaPrint style={{marginRight: "10px"}} />
 								{label.print}
 							</button>
 						</div>
@@ -235,27 +230,27 @@ const Cv = () => {
 						<div className="block">
 							<div className="wrapper">
 								<a href="https://www.linkedin.com/in/giuseppevigneri/">
-									<FontAwesomeIcon icon={faLinkedin} />
+									<FaLinkedinIn />
 									<span className="print">https://www.linkedin.com/in/giuseppevigneri/</span>
 								</a>
 								<a href="https://github.com/Geppe1990">
-									<FontAwesomeIcon icon={faGithub} />
+									<FaGithub />
 									<span className="print">https://github.com/Geppe1990</span>
 								</a>
 								<a href="https://twitter.com/ioSonoGeppe">
-									<FontAwesomeIcon icon={faTwitter} />
+									<FaTwitter />
 									<span className="print">https://twitter.com/ioSonoGeppe</span>
 								</a>
 								<a href="https://www.instagram.com/geppegram/">
-									<FontAwesomeIcon icon={faInstagram} />
+									<FaInstagram />
 									<span className="print">https://www.instagram.com/geppegram/</span>
 								</a>
 								<a href="tg://resolve?domain=geppegram">
-									<FontAwesomeIcon icon={faTelegramPlane} />
+									<FaTelegramPlane />
 									<span className="print">geppegram</span>
 								</a>
 								<a href="mailto:geppe1990@gmail.com">
-									<FontAwesomeIcon icon={faEnvelope} />
+									<FaEnvelope />
 									<span className="print">geppe1990@gmail.com</span>
 								</a>
 							</div>
