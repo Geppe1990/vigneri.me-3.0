@@ -199,7 +199,9 @@ const GlobalStyles = createGlobalStyle`
 		}
 	}
 
+	.button,
 	button {
+		font-size: 13px;
 		border: 0;
 		cursor: pointer;
 		font-family: inherit;

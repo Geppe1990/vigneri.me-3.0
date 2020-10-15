@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby";
-import LayoutCv from "../components/layout-cv";
+import LayoutCv from "../../components/layout-cv";
 
 const Cv = () => {
 	return (
-		<LayoutCv language="ita"/>
+		<LayoutCv language="eng"/>
 	)
 }
 
