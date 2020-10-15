@@ -12,6 +12,7 @@ module.exports = {
 		description: "Sono uno sviluppatore Web e Software specializzato in Javascript, React e Python",
 		url: "https://www.vigneri.me",
 		siteUrl: "https://www.vigneri.me",
+		defaultTitle: "Vigneri Giuseppe - Front-end Web Developer",
 	},
 	plugins: [
 		'gatsby-plugin-netlify',
