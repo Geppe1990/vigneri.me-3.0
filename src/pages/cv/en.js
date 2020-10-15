@@ -1,10 +1,14 @@
 import React from "react"
-import { graphql } from "gatsby";
+import { graphql } from "gatsby"
+import SEO from "../../components/SEO"
 import LayoutCv from "../../components/layout-cv";
 
-const Cv = () => {
+const Cv = ({ data }) => {
 	return (
-		<LayoutCv language="eng"/>
+        <React.Fragment>
+            <SEO title={data.site.siteMetadata.title} />
+            <LayoutCv language="eng"/>
+        </React.Fragment>
 	)
 }
 

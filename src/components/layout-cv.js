@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components";
 import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram, FaTelegramPlane, FaEnvelope, FaPrint, FaFlag } from 'react-icons/fa'
@@ -267,15 +267,5 @@ const LayoutCv = (props) => {
 		</Layout>
 	)
 }
-
-export const query = graphql`
-	query {
-		site {
-			siteMetadata {
-				title
-			}
-		}
-	}
-`
 
 export default LayoutCv;
