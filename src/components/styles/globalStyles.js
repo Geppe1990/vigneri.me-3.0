@@ -210,8 +210,13 @@ const GlobalStyles = createGlobalStyle`
 		position: relative;
 		background: ${colors.black};
 		color: ${colors.white};
-		border-radius: 16px;
+		border-radius: 100px;
 		transition: color 0.2s ease-out, background 0.2s ease-out;
+		outline: none;
+
+		&:hover {
+			text-decoration: none;
+		}
 
 		.dark & {
 			background: ${colors.white};
