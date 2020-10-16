@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import PostExcerpt from "../components/post-excerpt"
 import SEO from "../components/SEO"
 import styled from "styled-components";
+import { colors } from '../components/styles/globalStyles';
 
 const PAGINATION = styled.div`
 	display: flex;
@@ -18,17 +19,17 @@ const PAGINATION = styled.div`
 
 		&:hover {
 			background: #222;
-			color: #f9fafb;				
+			color: ${colors.white};				
 		} 
 	}
 
 	[aria-current="page"] {
 		background: #222;
-		color: #f9fafb;
+		color: ${colors.white};
 		transition: color 0.6s ease-out, background 0.6s ease-out;
 		
 		.dark & {
-			background-color: #f9fafb;
+			background-color: ${colors.white};
 			color: #222;
 		}
 	}

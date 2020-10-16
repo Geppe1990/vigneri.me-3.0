@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { FiSun, FiMoon } from 'react-icons/fi';
+import { colors } from '../components/styles/globalStyles';
 
 const DARKMODE = styled.div`
     display: inline-block;
@@ -14,7 +15,7 @@ const DARKMODE = styled.div`
         cursor: pointer;
 
         .dark & {
-            color: #f9fafb;
+            color: ${colors.white};
         }
     }
 `;

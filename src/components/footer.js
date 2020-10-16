@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHeart } from 'react-icons/fa'
 import styled from 'styled-components';
+import { colors, beat } from '../components/styles/globalStyles';
 
 const FOOTER = styled.footer`
     display: flex;
@@ -17,7 +18,7 @@ const FOOTER = styled.footer`
 
     .dark & {
         background: inherit;
-        color: #f9fafb;
+        color: ${colors.white};
         border: none;
     }
 
@@ -51,6 +52,12 @@ const FOOTER = styled.footer`
 		}
     }
     
+    .icon-heart {
+        color: ${colors.red};
+        animation:${beat} 1.5s ease infinite;
+    }
+
+
 `;
 
 export default () => {
@@ -83,7 +90,7 @@ export default () => {
                 </li>
             </ul>
             <small>
-                {new Date().getFullYear()} - Made with <FaHeart /> and Gatsby by Vigneri Giuseppe - <Link to={`/privacy/`} className="heading--reverse">Privacy</Link>
+                {new Date().getFullYear()} - Made with <FaHeart className="icon-heart" /> and Gatsby by Vigneri Giuseppe - <Link to={`/privacy/`} className="heading--reverse">Privacy</Link>
 
             </small>
         </FOOTER>

@@ -1,8 +1,9 @@
 import { keyframes, createGlobalStyle } from 'styled-components';
 
-const colors = {
+export const colors = {
 	"black": "#222",
 	"white": "#f9fafb",
+	"red": "#ff1744",
 }
 
 const shadow = {
@@ -18,6 +19,16 @@ const blink = keyframes`
   50% {
 	color: inherit;
   }
+`;
+
+export const beat = keyframes`
+	from, to {
+		transform: scale(1)
+	}
+
+	50% {
+		transform:scale(1.25);
+	}
 `;
 
 const GlobalStyles = createGlobalStyle`
@@ -73,17 +84,14 @@ const GlobalStyles = createGlobalStyle`
 		padding-bottom: 10px;
 	}
 
-	/* width */
 	::-webkit-scrollbar {
 		width: 6px;
 	}
 
-	/* Track */
 	::-webkit-scrollbar-track {
 		background: ${colors.white};
 	}
 
-	/* Handle */
 	::-webkit-scrollbar-thumb {
 		background: ${colors.black};
 		border-radius: 1px;
@@ -136,6 +144,7 @@ const GlobalStyles = createGlobalStyle`
 		background: ${colors.black};
 		color: ${colors.white};
 		transition: color 0.6s ease-out, background 0.6s ease-out;
+		padding: 0 2px;
 	}
 
 	.tags {
@@ -206,21 +215,23 @@ const GlobalStyles = createGlobalStyle`
 		cursor: pointer;
 		font-family: inherit;
 		padding: 10px 15px;
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 16px;
 		position: relative;
-		background: ${colors.black};
-		color: ${colors.white};
 		border-radius: 100px;
 		transition: color 0.2s ease-out, background 0.2s ease-out;
 		outline: none;
+		color: ${colors.black};
+		border: 2px solid ${colors.black};
+		background-color: transparent;
 
 		&:hover {
 			text-decoration: none;
+			transform: scale(1.05);
+			transition: transform .2s ease-in; 
 		}
 
 		.dark & {
-			background: ${colors.white};
-			color: ${colors.black};
+			border-color: ${colors.white};
+			color: ${colors.white};
 		}
 	}
 
