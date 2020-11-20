@@ -211,6 +211,7 @@ const LayoutCv = (props) => {
 								<em>jQuery</em>
 								<em>AngularJS</em>
 								<em>GatsbyJS</em>
+								<em>Typescript</em>
 								<em>Gulp</em>
 								<em>Grunt</em>
 								<em>WebPack</em>
