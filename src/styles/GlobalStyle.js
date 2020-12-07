@@ -7,16 +7,16 @@ const GlobalStyle = createGlobalStyle`
   ${Fonts};
 
   :root {
-    --dark-navy: #2c3e50;
-    --navy: #34495e;
-    --light-navy: #172a45;
+    --dark-navy: #2e313e;
+    --navy: #252b34;
+    --light-navy: #424851;
     --lightest-navy: #303C55;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --slate: #8892b0;
     --light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
-    --green: #e74c3c;
+    --green: #12e4b2;
     --green-tint: rgba(100, 255, 218, 0.1);
 
     --font-sans: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
