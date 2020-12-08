@@ -1,14 +1,14 @@
 ---
 date: '3'
-title: 'OctoProfile'
+title: 'valentino.com'
 cover: './octoprofile.png'
-github: 'https://github.com/bchiang7/octoprofile'
-external: 'https://octoprofile.now.sh'
+external: 'https://www.valentino.com'
 tech:
-  - Next.js
-  - Chart.js
-  - GitHub API
-showInProjects: true
+  - Javascript ES6
+  - .net
+  - Coremedia
+showInProjects: false
 ---
 
-A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size.
+E-commerce della prima linea dello stilista internazionale Valentino.
+Questo progetto è stato fatto a stretto contatto con il team di design, in modo da poter creare un'esperienza pixel perfect ad alte performance.

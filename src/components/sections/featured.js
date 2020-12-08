@@ -85,14 +85,6 @@ const StyledProject = styled.div`
     }
   }
 
-  .project-overline {
-    margin: 10px 0;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
-    font-weight: 400;
-  }
-
   .project-title {
     color: var(--lightest-slate);
     font-size: clamp(24px, 5vw, 28px);
@@ -276,7 +268,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Cosa ho costruito
       </h2>
 
       <div>
@@ -288,7 +280,6 @@ const Featured = () => {
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
-                  <p className="project-overline">Featured Project</p>
                   <h3 className="project-title">{title}</h3>
                   <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
 

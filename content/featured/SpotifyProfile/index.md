@@ -1,15 +1,15 @@
 ---
 date: '2'
-title: 'Spotify Profile'
+title: 'redvalentino.com'
 cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
+# github: 'https://github.com/bchiang7/spotify-profile'
 external: 'https://spotify-profile.herokuapp.com/'
 tech:
-  - React
-  - Node.js
-  - Express
-  - Spotify Web API
-showInProjects: true
+  - Javascript
+  - jQuery
+  - WordPress
+showInProjects: false
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+E-commerce della seconda linea dello stilista internazionale Valentino.
+Questo progetto, dalle linee differenti e più giovanili rispetto al sito principale ha una sezione dedicata alla comunicazione gestita con WordPress, integrato perfettamente all'interno del e-commerce
