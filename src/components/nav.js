@@ -6,7 +6,6 @@ import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
 import { useScrollDirection } from '@hooks';
 import { Menu } from '@components';
-import { IconLogo } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -159,11 +158,11 @@ const Nav = ({ isHome }) => {
               <div className="logo" tabIndex="-1">
                 {isHome ? (
                   <a href="/" aria-label="home">
-                    <IconLogo />
+                    &lt;vigneri.me&nbsp;/&gt;
                   </a>
                 ) : (
                   <Link to="/" aria-label="home">
-                    <IconLogo />
+                    &lt;vigneri.me&nbsp;/&gt;
                   </Link>
                 )}
               </div>
