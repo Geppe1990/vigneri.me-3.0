@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { email } from '@config';
-import { navDelay, loaderDelay } from '@utils';
+import { navDelay } from '@utils';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -69,7 +69,7 @@ const Hero = () => {
       <TransitionGroup component={null}>
         {isMounted &&
           items.map((item, i) => (
-            <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+            <CSSTransition key={i} classNames="fadeup" timeout={0}>
               <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
             </CSSTransition>
           ))}
