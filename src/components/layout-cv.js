@@ -102,7 +102,7 @@ const LayoutCv = (props) => {
 					
 					<div className="cv-intro card">
 						<h2 className="heading--reverse text-center hero">Giuseppe Vigneri</h2>
-						<p className="h1 text-center">Web Developer</p>
+						<p className="h1 text-center">Front-end Developer</p>
 						<p className="text-center">
 							{label.intro}
 						</p>
