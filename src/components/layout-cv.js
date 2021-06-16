@@ -152,17 +152,17 @@ const LayoutCv = (props) => {
 						<div className="cv-carriera card card--right">
 							<h2>{label.work}</h2>
 							<div className="block">
-								<h3>Web Developer, YOOX NET-A-PORTER GROUP</h3>
+								<h3>Front-end Developer, YOOX NET-A-PORTER GROUP</h3>
 								<small><span>{label.ynapDate}</span><span>Zola Predosa(BO)</span></small>
 								<span>{label.ynapDescription}</span>
 							</div>
 							<div className="block">
-								<h3>Web Developer, PRONESIS</h3>
+								<h3>Front-end Developer, PRONESIS</h3>
 								<small><span>{label.pronesisDate}</span> <span>Ferrara</span></small>
 								<span>{label.pronesisDescription}</span>
 							</div>
 							<div className="block">
-								<h3>Web Developer, OFFICINE DIGITALI</h3>
+								<h3>Front-end Developer, OFFICINE DIGITALI</h3>
 								<small><span>{label.ODDate}</span><span>Bologna</span></small>
 								<span>{label.ODDescription}</span>
 							</div>
